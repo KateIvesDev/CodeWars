@@ -3,3 +3,14 @@
 Examples
 "the-stealth-warrior" gets converted to "theStealthWarrior"
 "The_Stealth_Warrior" gets converted to "TheStealthWarrior" */
+
+function toCamelCase(str){
+    str = str.replace(/-/g, "_").split("_").map((value, index, array) => {
+      if (index > 0) {
+        return value.replace(value.charAt(0), value.charAt(0).toUpperCase())
+      } else  {
+        return value
+      }
+      })
+    return str.join("")
+  }
