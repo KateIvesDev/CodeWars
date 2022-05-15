@@ -1,18 +1,25 @@
 
-/*Take 2 strings s1 and s2 including only letters from ato z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+/*Write a function that given a floor in the american system returns the floor in the european system.
 
-Examples:
-a = "xyaabbbccccdefww"
-b = "xxxxyyyyabklmopq"
-longest(a, b) -> "abcdefklmopqwxy"
+With the 1st floor being replaced by the ground floor and the 13th floor being removed, the numbers move down to take their place. In case of above 13, they move down by two because there are two omitted numbers below them.
 
-a = "abcdefghijklmnopqrstuvwxyz"
-longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"*/
+Basements (negatives) stay the same as the universal level.
 
-function longest(s1, s2) {
-    s1 = s1.split("")
-    s2 = s2.split("")
-    let result = s1.concat(s2)
-    return [...new Set(result)].sort().join("")
-    
-}
+More information here
+
+Examples
+1  =>  0 
+0  =>  0
+5  =>  4
+15  =>  13
+-3  =>  -3*/
+
+function getRealFloor(n) {
+    if (n <= 0){
+      return n
+    } else if (n >= 13){
+      return n-2
+    } else {
+      return n-1
+    }
+  }
