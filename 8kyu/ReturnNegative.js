@@ -16,3 +16,14 @@ function makeNegative(num) {
       return num;
   }
   makeNegative(-9);
+
+  //REFACTOR USING A TERNARY
+  //Parameter given is a number that can be positive or negative
+  //Return expected is a negative number, or if 0 it would just be 0
+  //Examples, parameter of 1 would return -1, parameter of -1 would return -1, parameter of 0 would return 0,
+  //Pseudocode: A conditional statement (if else). If the parameter is  negative or 0, return the parameter, else return the parameter multiplied by -1.
+  
+  function makeNegative1(num) {
+    (num <=0) ? num : (num*-1)
+  }
+  makeNegative1(-1)
