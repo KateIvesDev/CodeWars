@@ -11,8 +11,11 @@ function opposite(number) {
 opposite(1)
 
 //REFACTOR
+//Parameter given is an integer or floating pt num
+//Return the opposite of the number
+//Example: if the parameter is -1, return 1, if the parameter is 1, return -1
+//Pseudcode: Really just need to multiply the parameter by -1 or use a simple arrow function
 
-function opposite1(number) {
-    return number * -1;
-}
-opposite1(10)
+const opposite1 = (num) => -num
+
+opposite1()
