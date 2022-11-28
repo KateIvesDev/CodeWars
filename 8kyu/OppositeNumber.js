@@ -8,11 +8,11 @@ function opposite(number) {
     } else 
       return Math.abs(number)
   }
+opposite(1)
 
-/*REFACTOR
+//REFACTOR
 
-function opposite(number) {
+function opposite1(number) {
     return number * -1;
 }
-
-*/
+opposite1(10)
