@@ -14,7 +14,7 @@ opposite(1)
 //Parameter given is an integer or floating pt num
 //Return the opposite of the number
 //Example: if the parameter is -1, return 1, if the parameter is 1, return -1
-//Pseudcode: Really just need to multiply the parameter by -1 or use a simple arrow function
+//Pseudcode: Could just return parameter multiplied by -1 or use a simple arrow function to return the negative of the parameter
 
 const opposite1 = (num) => -num
 
