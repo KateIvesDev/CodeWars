@@ -16,3 +16,4 @@ function count(string) {
     }
     return count
   }
+count()
