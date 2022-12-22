@@ -21,3 +21,4 @@ function solution(digits){
     return Math.max(...sequences)
   }
   console.log(solution(["1234567890"]))
+  
